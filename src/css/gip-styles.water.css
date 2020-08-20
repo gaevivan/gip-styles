@@ -1,0 +1,64 @@
+@import url("./gip-styles.common.css");
+
+/* BUTTON */
+button {
+    --color: var(--cobalt);
+    background-color: transparent;
+    border: none;
+    border-radius: 0.2em;
+    color: var(--color);
+    cursor: pointer;
+    outline: none !important;
+    margin: 2px;
+    padding: 4px 10px;
+    position: relative;
+    touch-action: none;
+}
+button::before {
+    animation: pulse 5s infinite;
+    animation-delay: 2s;
+    border-radius: 0.2em;
+    content: "";
+    left: 0;
+    top: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    opacity: 0;
+    background-color: var(--color);
+}
+button:active::before {
+    animation: none;
+    opacity: 0.3;
+}
+button:active {
+    -webkit-tap-highlight-color: transparent;
+}
+@keyframes pulse {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 0.1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+button.color-pearl {
+    --color: var(--pearl);
+}
+button.color-garnet {
+    --color: var(--garnet);
+}
+button.color-sapphire {
+    --color: var(--sapphire);
+}
+button.color-emerald {
+    --color: var(--emerald);
+}
+button.color-amethyst {
+    --color: var(--amethyst);
+}

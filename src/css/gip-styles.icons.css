@@ -1,0 +1,13 @@
+
+[class^="gip-icon-"] {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-color: black;
+}
+.gip-icon-check {
+    -webkit-mask: url("../icons/check.svg") no-repeat center;
+}
+.gip-icon-arrow-left {
+    -webkit-mask: url("../icons/arrow-left.svg") no-repeat center;
+}

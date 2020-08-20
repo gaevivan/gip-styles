@@ -1,0 +1,196 @@
+@import url("./gip-styles.common.css");
+
+/* RADIOBOX */
+input[type="radio"] {
+    --color: var(--cobalt);
+    position: relative;
+    background-color: transparent;
+    border-bottom: 1px solid transparent;
+    cursor: pointer;
+    appearance: none;
+    outline: none;
+    width: 20px;
+    height: 20px;
+    z-index: 0;
+}
+input[type="radio"]:active {
+    filter: opacity(80%);
+}
+input[type="radio"]::after {
+    background-color: var(--color);
+    border-bottom: 1px solid var(--color);
+    border-radius: 20px;
+    bottom: -1px;
+    box-sizing: content-box;
+    content: "";
+    height: 0;
+    position: absolute;
+    left: 0;
+    transition: all ease 0.1s;
+    width: 100%;
+}
+input[type="radio"]:hover:after {
+    height: 100%;
+    background-color: var(--color);
+}
+input[type="radio"]:checked {
+    border-color: var(--color);
+}
+input[type="radio"]:checked::after {
+    mask: url("../icons/check.svg") no-repeat center;
+    background-color: var(--color);
+    mask-size: 1em;
+    height: 100%;
+    width: 100%;
+}
+input[type="radio"]:checked:hover {
+    border-radius: 20px;
+    background-color: var(--color);
+}
+input[type="radio"]:checked:hover::after {
+    background-color: white;
+    z-index: 1;
+}
+
+input[type="radio"].color-pearl {
+    --color: var(--pearl);
+}
+input[type="radio"].color-garnet {
+    --color: var(--garnet);
+}
+input[type="radio"].color-sapphire {
+    --color: var(--sapphire);
+}
+input[type="radio"].color-emerald {
+    --color: var(--emerald);
+}
+input[type="radio"].color-amethyst {
+    --color: var(--amethyst);
+}
+
+/* CHECKBOX */
+input[type="checkbox"] {
+    --color: var(--cobalt);
+    position: relative;
+    background-color: transparent;
+    border-bottom: 1px solid transparent;
+    cursor: pointer;
+    appearance: none;
+    outline: none;
+    width: 20px;
+    height: 20px;
+    z-index: 0;
+}
+input[type="checkbox"]:active {
+    filter: opacity(80%);
+}
+input[type="checkbox"]::after {
+    background-color: var(--color);
+    border-bottom: 1px solid var(--color);
+    border-radius: 3px;
+    bottom: -1px;
+    box-sizing: content-box;
+    content: "";
+    height: 0;
+    position: absolute;
+    left: 0;
+    transition: all ease 0.1s;
+    width: 100%;
+}
+input[type="checkbox"]:hover::after {
+    height: 100%;
+    background-color: var(--color);
+}
+input[type="checkbox"]:checked {
+    border-color: var(--color);
+}
+input[type="checkbox"]:checked::after {
+    -webkit-mask: url("./icons/check.svg") no-repeat center;
+    background-color: var(--color);
+    -webkit-mask-size: 1em;
+    height: 100%;
+    width: 100%;
+}
+input[type="checkbox"]:checked:hover {
+    border-radius: 3px;
+    background-color: var(--color);
+}
+input[type="checkbox"]:checked:hover::after {
+    background-color: white;
+    z-index: 1;
+}
+
+input[type="checkbox"].color-pearl {
+    --color: var(--pearl);
+}
+input[type="checkbox"].color-garnet {
+    --color: var(--garnet);
+}
+input[type="checkbox"].color-sapphire {
+    --color: var(--sapphire);
+}
+input[type="checkbox"].color-emerald {
+    --color: var(--emerald);
+}
+input[type="checkbox"].color-amethyst {
+    --color: var(--amethyst);
+}
+
+/* BUTTON */
+button {
+    --color: var(--cobalt) !important;
+    cursor: pointer;
+    position: relative;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    outline: none !important;
+    overflow: hidden;
+    word-wrap: break-word;
+    text-overflow: clip;
+    background-color: transparent;
+    border: 0;
+    padding: 5px 8px;
+    margin: 3px;
+    transition: color ease 0.1s;
+}
+button:active {
+    filter: opacity(80%);
+}
+button::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    bottom: 0;
+    border-radius: 3px;
+    background-color: var(--color);
+    transition: all ease 0.1s;
+}
+button:hover {
+    color: white;
+}
+button:hover [class^="icon-"] {
+    background-color: white;
+}
+button:hover:after {
+    height: 100%;
+}
+
+button.color-pearl::after {
+    --color: var(--pearl);
+}
+button.color-garnet::after {
+    --color: var(--garnet);
+}
+button.color-sapphire::after {
+    --color: var(--sapphire);
+}
+button.color-emerald::after {
+    --color: var(--emerald);
+}
+button.color-amethyst::after {
+    --color: var(--amethyst);
+}
