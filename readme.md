@@ -2,7 +2,7 @@ gip = Gaev Ivan Package
 
 ### Example
 
-http://run.plnkr.co/preview/cke61yn2u00043b663rs54i7l/
+Fire: http://plnkr.co/edit/GLH9hRE6P10Esf17?open=lib%2Fscript.js&preview
 
 ### Install
 
