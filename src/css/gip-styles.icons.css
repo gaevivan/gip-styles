@@ -11,3 +11,25 @@
 .gip-icon-arrow-left {
     -webkit-mask: url("../icons/arrow-left.svg") no-repeat center;
 }
+.gip-icon-arrow-down {
+    -webkit-mask: url("../icons/arrow-down.svg") no-repeat center;
+}
+.gip-icon-shutdown {
+    -webkit-mask: url("../icons/shutdown.svg") no-repeat center;
+}
+.gip-icon-grid-9 {
+    -webkit-mask: url("../icons/grid-9.svg") no-repeat center;
+}
+.gip-icon-grid-4 {
+    -webkit-mask: url("../icons/grid-4.svg") no-repeat center;
+}
+.gip-icon-refresh {
+    -webkit-mask: url("../icons/refresh.svg") no-repeat center;
+}
+.gip-icon-align-justify {
+    -webkit-mask: url("../icons/align-justify.svg") no-repeat center;
+}
+
+.icon-white {
+    background-color: white !important;
+}
