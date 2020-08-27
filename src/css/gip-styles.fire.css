@@ -52,22 +52,6 @@ input[type="radio"]:checked:hover::after {
     z-index: 1;
 }
 
-input[type="radio"].color-pearl {
-    --color: var(--pearl);
-}
-input[type="radio"].color-garnet {
-    --color: var(--garnet);
-}
-input[type="radio"].color-sapphire {
-    --color: var(--sapphire);
-}
-input[type="radio"].color-emerald {
-    --color: var(--emerald);
-}
-input[type="radio"].color-amethyst {
-    --color: var(--amethyst);
-}
-
 /* CHECKBOX */
 input[type="checkbox"] {
     --color: var(--cobalt);
@@ -120,22 +104,6 @@ input[type="checkbox"]:checked:hover::after {
     z-index: 1;
 }
 
-input[type="checkbox"].color-pearl {
-    --color: var(--pearl);
-}
-input[type="checkbox"].color-garnet {
-    --color: var(--garnet);
-}
-input[type="checkbox"].color-sapphire {
-    --color: var(--sapphire);
-}
-input[type="checkbox"].color-emerald {
-    --color: var(--emerald);
-}
-input[type="checkbox"].color-amethyst {
-    --color: var(--amethyst);
-}
-
 /* BUTTON */
 button {
     --color: var(--cobalt) !important;
@@ -177,20 +145,4 @@ button:hover [class^="icon-"] {
 }
 button:hover:after {
     height: 100%;
-}
-
-button.color-pearl::after {
-    --color: var(--pearl);
-}
-button.color-garnet::after {
-    --color: var(--garnet);
-}
-button.color-sapphire::after {
-    --color: var(--sapphire);
-}
-button.color-emerald::after {
-    --color: var(--emerald);
-}
-button.color-amethyst::after {
-    --color: var(--amethyst);
 }

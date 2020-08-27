@@ -1,35 +1,72 @@
+@import url("./gip-styles.common.css");
 
 [class^="gip-icon-"] {
+    --color: black;
     display: block;
     width: 20px;
     height: 20px;
-    background-color: black;
-}
-.gip-icon-check {
-    -webkit-mask: url("../icons/check.svg") no-repeat center;
-}
-.gip-icon-arrow-left {
-    -webkit-mask: url("../icons/arrow-left.svg") no-repeat center;
+    background-color: var(--color);
 }
 .gip-icon-arrow-down {
     -webkit-mask: url("../icons/arrow-down.svg") no-repeat center;
 }
-.gip-icon-shutdown {
-    -webkit-mask: url("../icons/shutdown.svg") no-repeat center;
+.gip-icon-arrow-left {
+    -webkit-mask: url("../icons/arrow-left.svg") no-repeat center;
 }
-.gip-icon-grid-9 {
-    -webkit-mask: url("../icons/grid-9.svg") no-repeat center;
+.gip-icon-burger {
+    -webkit-mask: url("../icons/burger.svg") no-repeat center;
+}
+.gip-icon-check {
+    -webkit-mask: url("../icons/check.svg") no-repeat center;
+}
+.gip-icon-folder {
+    -webkit-mask: url("../icons/folder.svg") no-repeat center;
 }
 .gip-icon-grid-4 {
     -webkit-mask: url("../icons/grid-4.svg") no-repeat center;
 }
+.gip-icon-grid-4-break {
+    -webkit-mask: url("../icons/grid-4-break.svg") no-repeat center;
+}
+.gip-icon-grid-9 {
+    -webkit-mask: url("../icons/grid-9.svg") no-repeat center;
+}
+.gip-icon-menu {
+    -webkit-mask: url("../icons/menu.svg") no-repeat center;
+}
+.gip-icon-note {
+    -webkit-mask: url("../icons/note.svg") no-repeat center;
+}
 .gip-icon-refresh {
     -webkit-mask: url("../icons/refresh.svg") no-repeat center;
 }
-.gip-icon-align-justify {
-    -webkit-mask: url("../icons/align-justify.svg") no-repeat center;
+.gip-icon-search {
+    -webkit-mask: url("../icons/search.svg") no-repeat center;
+}
+.gip-icon-settings {
+    -webkit-mask: url("../icons/settings.svg") no-repeat center;
+}
+.gip-icon-shutdown {
+    -webkit-mask: url("../icons/shutdown.svg") no-repeat center;
+}
+.gip-icon-tag {
+    -webkit-mask: url("../icons/tag.svg") no-repeat center;
+}
+.gip-icon-trash {
+    -webkit-mask: url("../icons/trash.svg") no-repeat center;
+}
+.gip-icon-user {
+    -webkit-mask: url("../icons/user.svg") no-repeat center;
+}
+.gip-icon-add {
+    -webkit-mask: url("../icons/add.svg") no-repeat center;
+}
+.gip-icon-box {
+    -webkit-mask: url("../icons/box.svg") no-repeat center;
+}
+.gip-icon-next {
+    -webkit-mask: url("../icons/next.svg") no-repeat center;
 }
 
-.icon-white {
-    background-color: white !important;
-}
+
+

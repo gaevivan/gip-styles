@@ -6,7 +6,16 @@
     --sapphire: #126180;
     --garnet: #c0392b;
     --pearl: #cccccc;
+    --light-emerald: #2ecc7036;
+    --light-amethyst: #9c59b642;
+    --light-cobalt: #706cde27;
+    --light-sapphire: #12618038;
+    --light-garnet: #c03a2b3a;
     --base-value: 8px;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 hr {
@@ -319,4 +328,33 @@ hr {
 .my-3 {
     margin-top: calc(3 * var(--base-value)) !important;
     margin-bottom: calc(3 * var(--base-value)) !important;
+}
+
+
+.color-pearl {
+    --color: var(--pearl);
+}
+.color-garnet {
+    --color: var(--garnet);
+}
+.color-sapphire {
+    --color: var(--sapphire);
+}
+.color-emerald {
+    --color: var(--emerald);
+}
+.color-amethyst {
+    --color: var(--amethyst);
+}
+.color-cobalt {
+    --color: var(--cobalt);
+}
+.color-white {
+    --color: white;
+}
+.color-black {
+    --color: black;
+}
+.color-blue {
+    --color: lightblue;
 }

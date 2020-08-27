@@ -1,23 +1,69 @@
 @import url("./gip-styles.common.css");
 
+/* INPUT TEXT */
+input[type="text"], input[type="password"] {
+    --color: var(--light-cobalt);
+    animation: input-pulse 12s infinite;
+    animation-delay: 3s;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 0.1em;
+    opacity: 0.8;
+    outline: none !important;
+    padding: 7px;
+    touch-action: none;
+    -webkit-box-shadow: 0 0 0px 1000px white inset;
+}
+input[type="text"]:focus, input[type="password"]:focus {
+    animation: none;
+    border: 1px solid var(--color);
+    opacity: 1;
+}
+@keyframes input-pulse {
+    0% {
+        border: 1px solid white;
+    }
+    25% {
+        border: 1px solid var(--color);
+    }
+    50% {
+        border: 1px solid white;
+    }
+}
+input[type="text"].color-garnet {
+    --color: var(--light-garnet);
+}
+input[type="text"].color-sapphire {
+    --color: var(--light-sapphire);
+}
+input[type="text"].color-emerald {
+    --color: var(--light-emerald);
+}
+input[type="text"].color-amethyst {
+    --color: var(--light-amethyst);
+}
+input[type="text"].color-cobalt {
+    --color: var(--light-cobalt);
+}
+
 /* BUTTON */
 button {
     --color: var(--cobalt);
     background-color: transparent;
     border: none;
-    border-radius: 0.2em;
+    border-radius: 0.1em;
     color: var(--color);
     cursor: pointer;
     outline: none !important;
     margin: 2px;
-    padding: 4px 10px;
+    padding: 6px 12px;
     position: relative;
     touch-action: none;
 }
 button::before {
-    animation: pulse 5s infinite;
+    animation: button-pulse 7s infinite;
     animation-delay: 2s;
-    border-radius: 0.2em;
+    border-radius: 0.1em;
     content: "";
     left: 0;
     top: 0;
@@ -35,7 +81,7 @@ button:active::before {
 button:active {
     -webkit-tap-highlight-color: transparent;
 }
-@keyframes pulse {
+@keyframes button-pulse {
     0% {
         opacity: 0;
     }
@@ -45,20 +91,4 @@ button:active {
     50% {
         opacity: 0;
     }
-}
-
-button.color-pearl {
-    --color: var(--pearl);
-}
-button.color-garnet {
-    --color: var(--garnet);
-}
-button.color-sapphire {
-    --color: var(--sapphire);
-}
-button.color-emerald {
-    --color: var(--emerald);
-}
-button.color-amethyst {
-    --color: var(--amethyst);
 }
