@@ -23,6 +23,13 @@ hr {
     border-top: 1px solid gray;
 }
 
+.cursor-pointer {
+    cursor: pointer;
+}
+.cursor-default {
+    cursor: default;
+}
+
 /* Size - Размеры. */
 .h-25 {
     height: 25% !important;
@@ -352,9 +359,50 @@ hr {
 .color-white {
     --color: white;
 }
+.color-gray {
+    --color: gray;
+}
 .color-black {
     --color: black;
 }
 .color-blue {
     --color: lightblue;
+}
+
+.size-k05 {
+    --size-koef: 0.5;
+}
+.size-k075 {
+    --size-koef: 0.75;
+}
+.size-k1 {
+    --size-koef: 1;
+}
+.size-k15 {
+    --size-koef: 1.5;
+}
+.size-k2 {
+    --size-koef: 2;
+}
+.size-14 {
+    --size: 14px;
+}
+.size-20 {
+    --size: 20px;
+}
+.size-24 {
+    --size: 24px;
+}
+
+.z-index-0 {
+    z-index: 0;
+}
+.z-index-1 {
+    z-index: 1;
+}
+.z-index-2 {
+    z-index: 2;
+}
+.z-index-3 {
+    z-index: 3;
 }
