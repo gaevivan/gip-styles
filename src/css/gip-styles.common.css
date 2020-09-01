@@ -406,3 +406,30 @@ hr {
 .z-index-3 {
     z-index: 3;
 }
+
+/* DROPDOWN */
+.dropdown {
+    display: block;
+    position: relative;
+    z-index: 1;
+}
+.dropdown-toggler {
+    z-index: 2;
+}
+.dropdown-content {
+    background-color: white;
+    border-radius: 2px;
+    box-shadow: 1px 1px 3px 3px rgba(0, 0, 0, 0.178);
+    display: none;
+    flex-direction: column;
+    padding: 5px;
+    position: fixed;
+    margin: 0;
+    z-index: 3;
+}
+.dropdown-toggler:hover + .dropdown-content {
+    display: flex;
+}
+.dropdown-content:hover {
+    display: flex;
+}
