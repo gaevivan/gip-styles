@@ -97,6 +97,12 @@ button::before {
     width: 100%;
     z-index: 1;
 }
+button:disabled {
+    --color: var(--pearl);
+}
+button:disabled::before {
+    animation: none !important;
+}
 button:active::before {
     animation: none;
     opacity: 0.3;
